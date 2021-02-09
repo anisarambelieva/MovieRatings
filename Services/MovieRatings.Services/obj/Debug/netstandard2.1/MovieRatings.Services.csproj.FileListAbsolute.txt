@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\bin\Debug\netstandard2.1\MovieRatings.Services.deps.json
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\bin\Debug\netstandard2.1\MovieRatings.Services.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\bin\Debug\netstandard2.1\MovieRatings.Services.pdb
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\obj\Debug\netstandard2.1\MovieRatings.Services.csprojAssemblyReference.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\obj\Debug\netstandard2.1\MovieRatings.Services.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\obj\Debug\netstandard2.1\MovieRatings.Services.AssemblyInfo.cs
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\obj\Debug\netstandard2.1\MovieRatings.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\obj\Debug\netstandard2.1\MovieRatings.Services.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services\obj\Debug\netstandard2.1\MovieRatings.Services.pdb

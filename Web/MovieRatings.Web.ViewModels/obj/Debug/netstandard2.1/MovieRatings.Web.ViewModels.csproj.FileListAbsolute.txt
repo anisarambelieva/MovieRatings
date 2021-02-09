@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Web.ViewModels.deps.json
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Web.ViewModels.dll
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Web.ViewModels.pdb
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Data.Common.dll
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Data.Models.dll
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Services.Mapping.dll
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Data.Models.pdb
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Services.Mapping.pdb
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\bin\Debug\netstandard2.1\MovieRatings.Data.Common.pdb
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\obj\Debug\netstandard2.1\MovieRatings.Web.ViewModels.csprojAssemblyReference.cache
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\obj\Debug\netstandard2.1\MovieRatings.Web.ViewModels.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\obj\Debug\netstandard2.1\MovieRatings.Web.ViewModels.AssemblyInfo.cs
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\obj\Debug\netstandard2.1\MovieRatings.Web.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\obj\Debug\netstandard2.1\MovieRatings.Web.ViewModels.csproj.CopyComplete
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\obj\Debug\netstandard2.1\MovieRatings.Web.ViewModels.dll
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.ViewModels\obj\Debug\netstandard2.1\MovieRatings.Web.ViewModels.pdb

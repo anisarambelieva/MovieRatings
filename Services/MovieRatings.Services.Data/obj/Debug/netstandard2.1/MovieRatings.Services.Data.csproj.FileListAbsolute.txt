@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Services.Data.deps.json
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Services.Data.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Services.Data.pdb
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Data.Common.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Data.Models.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Services.Mapping.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Data.Common.pdb
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Data.Models.pdb
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Services.Mapping.pdb
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.csprojAssemblyReference.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.csproj.CopyComplete
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.pdb

@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\bin\Debug\netstandard2.1\MovieRatings.Services.Messaging.deps.json
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\bin\Debug\netstandard2.1\MovieRatings.Services.Messaging.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\bin\Debug\netstandard2.1\MovieRatings.Services.Messaging.pdb
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\obj\Debug\netstandard2.1\MovieRatings.Services.Messaging.csprojAssemblyReference.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\obj\Debug\netstandard2.1\MovieRatings.Services.Messaging.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\obj\Debug\netstandard2.1\MovieRatings.Services.Messaging.AssemblyInfo.cs
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\obj\Debug\netstandard2.1\MovieRatings.Services.Messaging.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\obj\Debug\netstandard2.1\MovieRatings.Services.Messaging.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Messaging\obj\Debug\netstandard2.1\MovieRatings.Services.Messaging.pdb

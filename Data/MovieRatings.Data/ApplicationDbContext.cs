@@ -26,6 +26,12 @@
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<Movie> Movies { get; set; }
+
+        public DbSet<Genre> Genres { get; set; }
+
+        public DbSet<Image> Images { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)
