@@ -14,3 +14,5 @@ C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug
 C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.csproj.CopyComplete
 C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.dll
 C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\obj\Debug\netstandard2.1\MovieRatings.Services.Data.pdb
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Web.ViewModels.dll
+C:\Users\User\Desktop\MovieRatings\Services\MovieRatings.Services.Data\bin\Debug\netstandard2.1\MovieRatings.Web.ViewModels.pdb

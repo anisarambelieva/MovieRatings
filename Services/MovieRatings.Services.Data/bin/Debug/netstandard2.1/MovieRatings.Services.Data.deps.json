@@ -12,6 +12,7 @@
           "MovieRatings.Data.Common": "1.0.0",
           "MovieRatings.Data.Models": "1.0.0",
           "MovieRatings.Services.Mapping": "1.0.0",
+          "MovieRatings.Web.ViewModels": "1.0.0",
           "StyleCop.Analyzers": "1.2.0-beta.304"
         },
         "runtime": {
@@ -338,6 +339,15 @@
         "runtime": {
           "MovieRatings.Services.Mapping.dll": {}
         }
+      },
+      "MovieRatings.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "MovieRatings.Data.Models": "1.0.0",
+          "MovieRatings.Services.Mapping": "1.0.0"
+        },
+        "runtime": {
+          "MovieRatings.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -568,6 +578,11 @@
       "sha512": ""
     },
     "MovieRatings.Services.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieRatings.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,16 +1,33 @@
 ﻿namespace MovieRatings.Web.Controllers
 {
     using System.Diagnostics;
-
-    using MovieRatings.Web.ViewModels;
-
+    using System.Linq;
     using Microsoft.AspNetCore.Mvc;
+    using MovieRatings.Data;
+    using MovieRatings.Services.Data;
+    using MovieRatings.Web.ViewModels;
+    using MovieRatings.Web.ViewModels.Home;
 
     public class HomeController : BaseController
     {
+        private readonly IGetCountsService countsService;
+
+        public HomeController(IGetCountsService countsService)
+        {
+            this.countsService = countsService;
+        }
+
         public IActionResult Index()
         {
-            return this.View();
+            var countsDto = this.countsService.GetCounts();
+
+            var viewModel = new IndexViewModel
+            {
+                GenresCount = countsDto.GenresCount,
+                MoviesCount = countsDto.MoviesCount,
+            };
+
+            return this.View(viewModel);
         }
 
         public IActionResult Privacy()

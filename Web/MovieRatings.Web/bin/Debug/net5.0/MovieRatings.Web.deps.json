@@ -2367,7 +2367,8 @@
         "dependencies": {
           "MovieRatings.Data.Common": "1.0.0",
           "MovieRatings.Data.Models": "1.0.0",
-          "MovieRatings.Services.Mapping": "1.0.0"
+          "MovieRatings.Services.Mapping": "1.0.0",
+          "MovieRatings.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "MovieRatings.Services.Data.dll": {}

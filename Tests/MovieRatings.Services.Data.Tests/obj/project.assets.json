@@ -2747,7 +2747,8 @@
         "dependencies": {
           "MovieRatings.Data.Common": "1.0.0",
           "MovieRatings.Data.Models": "1.0.0",
-          "MovieRatings.Services.Mapping": "1.0.0"
+          "MovieRatings.Services.Mapping": "1.0.0",
+          "MovieRatings.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MovieRatings.Services.Data.dll": {}
@@ -2767,6 +2768,20 @@
         },
         "runtime": {
           "bin/placeholder/MovieRatings.Services.Mapping.dll": {}
+        }
+      },
+      "MovieRatings.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "MovieRatings.Data.Models": "1.0.0",
+          "MovieRatings.Services.Mapping": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieRatings.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieRatings.Web.ViewModels.dll": {}
         }
       }
     }
@@ -8809,6 +8824,11 @@
       "type": "project",
       "path": "../../Services/MovieRatings.Services.Mapping/MovieRatings.Services.Mapping.csproj",
       "msbuildProject": "../../Services/MovieRatings.Services.Mapping/MovieRatings.Services.Mapping.csproj"
+    },
+    "MovieRatings.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../../Web/MovieRatings.Web.ViewModels/MovieRatings.Web.ViewModels.csproj",
+      "msbuildProject": "../../Web/MovieRatings.Web.ViewModels/MovieRatings.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

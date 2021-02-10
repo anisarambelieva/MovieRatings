@@ -464,3 +464,4 @@ C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web\obj\Debug\net5.0\MovieRa
 C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web\obj\Debug\net5.0\ref\MovieRatings.Web.dll
 C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web\obj\Debug\net5.0\MovieRatings.Web.pdb
 C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web\obj\Debug\net5.0\MovieRatings.Web.genruntimeconfig.cache
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web\obj\Debug\net5.0\Razor\Views\Movies\Create.cshtml.g.cs
