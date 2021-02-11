@@ -9,6 +9,8 @@
     {
         Task CreateAsync(CreateMovieInputModel input);
 
-        IEnumerable<MovieInListViewModel> GetAll(int page, int itemsPerPage = 12);
+        IEnumerable<Т> GetAll<Т>(int page, int itemsPerPage = 12);
+
+        int GetCount();
     }
 }

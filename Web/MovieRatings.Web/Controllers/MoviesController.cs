@@ -44,12 +44,16 @@
             return this.Redirect("/");
         }
 
-        public IActionResult All(int id)
+        public IActionResult All(int id = 1)
         {
+            const int ItemsPerPage = 12;
+
             var viewModel = new MoviesListViewModel
             {
+                ItemsPerPage = ItemsPerPage,
                 PageNumber = id,
-                Movies = this.moviesService.GetAll(id, 12),
+                MoviesCount = this.moviesService.GetCount(),
+                Movies = this.moviesService.GetAll<MovieInListViewModel>(id, ItemsPerPage),
             };
             return this.View(viewModel);
         }

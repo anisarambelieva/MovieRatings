@@ -17,6 +17,10 @@
             await dbContext.Genres.AddAsync(new Models.Genre { Name = "Comedy" });
             await dbContext.Genres.AddAsync(new Models.Genre { Name = "Documentary" });
             await dbContext.Genres.AddAsync(new Models.Genre { Name = "Thriller" });
+            await dbContext.Genres.AddAsync(new Models.Genre { Name = "Action" });
+            await dbContext.Genres.AddAsync(new Models.Genre { Name = "Horror" });
+            await dbContext.Genres.AddAsync(new Models.Genre { Name = "Romance" });
+            await dbContext.Genres.AddAsync(new Models.Genre { Name = "Crime" });
 
             await dbContext.SaveChangesAsync();
         }
