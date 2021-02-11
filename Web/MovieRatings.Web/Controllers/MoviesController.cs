@@ -1,8 +1,10 @@
 ﻿namespace MovieRatings.Web.Controllers
 {
+    using System;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
+    using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc;
     using MovieRatings.Services.Data;
     using MovieRatings.Web.ViewModels.Movies;
@@ -11,13 +13,16 @@
     {
         private readonly IGenresService genresService;
         private readonly IMoviesService moviesService;
+        private readonly IWebHostEnvironment environment;
 
         public MoviesController(
             IGenresService genresService,
-            IMoviesService moviesService)
+            IMoviesService moviesService,
+            IWebHostEnvironment environment)
         {
             this.genresService = genresService;
             this.moviesService = moviesService;
+            this.environment = environment;
         }
 
         [Authorize]
@@ -38,7 +43,17 @@
                 return this.View(input);
             }
 
-            await this.moviesService.CreateAsync(input);
+            try
+            {
+                await this.moviesService.CreateAsync(input, $"{this.environment.WebRootPath}/images");
+            }
+            catch (Exception ex)
+            {
+                this.ModelState.AddModelError(string.Empty, ex.Message);
+
+                input.GenresItems = this.genresService.GetAllAsKeyValuePairs();
+                return this.View(input);
+            }
 
             // TODO: Redirect to Movie page
             return this.Redirect("/");

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Rc/pDGbXCPNt8envhv5Qs4h60SmzIfRP2aQZG3AbFLm+HSp91HIB64k4esujrd3vr7LZ+FSl2PAniw61COJwCg==",
+  "dgSpecHash": "8kUP3OKae6hwcORMzIMQWNjhMsVVaLv2Sd4Xpdt3BOKI0ylVpftnwe2gR840ejd27hVhyW+YXwsqkIhS6za1Lg==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\MovieRatings\\Web\\MovieRatings.Web\\MovieRatings.Web.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,9 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.0\\microsoft.aspnetcore.cryptography.keyderivation.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.0\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.12\\microsoft.aspnetcore.http.features.3.1.12.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.0\\microsoft.aspnetcore.identity.ui.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.0\\microsoft.aspnetcore.mvc.razor.extensions.5.0.0.nupkg.sha512",
@@ -128,6 +130,7 @@
     "C:\\Users\\User\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.io.pipelines\\4.7.4\\system.io.pipelines.4.7.4.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
