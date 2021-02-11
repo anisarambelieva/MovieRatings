@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pN4HwnanMGZQj4idgKLbvsmxYXHC5wzjm/rrHHrDf0fOCLkiCPO12DjCXbgTUFpRkIlB7KQ+13WY580crPnHYQ==",
+  "dgSpecHash": "vehwtUshXnXbGJ+cvc3QTmS8dis1il/ao0f94ebFbzFq3DTSkiY/DWWZFKYpUpw/Kc9Tx4qTZqBVswAU9nTHew==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\MovieRatings\\Web\\MovieRatings.Web.ViewModels\\MovieRatings.Web.ViewModels.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.0\\microsoft.aspnetcore.cryptography.keyderivation.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.12\\microsoft.aspnetcore.http.features.3.1.12.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
@@ -30,10 +31,12 @@
     "C:\\Users\\User\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.io.pipelines\\4.7.4\\system.io.pipelines.4.7.4.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+    "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

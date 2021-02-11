@@ -6,3 +6,4 @@ C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.Infrastructure\obj\Debug
 C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.Infrastructure\obj\Debug\netstandard2.1\MovieRatings.Web.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.Infrastructure\obj\Debug\netstandard2.1\MovieRatings.Web.Infrastructure.dll
 C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.Infrastructure\obj\Debug\netstandard2.1\MovieRatings.Web.Infrastructure.pdb
+C:\Users\User\Desktop\MovieRatings\Web\MovieRatings.Web.Infrastructure\obj\Debug\netstandard2.1\MovieRatings.Web.Infrastructure.csprojAssemblyReference.cache

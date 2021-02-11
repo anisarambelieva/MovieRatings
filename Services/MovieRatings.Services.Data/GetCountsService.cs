@@ -1,10 +1,11 @@
 ﻿namespace MovieRatings.Services.Data
 {
+    using System.Linq;
+
     using MovieRatings.Data.Common.Repositories;
     using MovieRatings.Data.Models;
     using MovieRatings.Services.Data.Models;
     using MovieRatings.Web.ViewModels.Home;
-    using System.Linq;
 
     public class GetCountsService : IGetCountsService
     {

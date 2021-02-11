@@ -1,5 +1,6 @@
 ﻿namespace MovieRatings.Web.ViewModels.Movies
 {
+    using Microsoft.AspNetCore.Http;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
@@ -14,6 +15,8 @@
         public string Description { get; set; }
 
         public int GenreId { get; set; }
+
+        public IEnumerable<IFormFile> Images { get; set; }
 
         public IEnumerable<KeyValuePair<string, string>> GenresItems { get; set; }
     }

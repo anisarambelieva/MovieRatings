@@ -7,7 +7,7 @@
 
     public interface IMoviesService
     {
-        Task CreateAsync(CreateMovieInputModel input);
+        Task CreateAsync(CreateMovieInputModel input, string imagePath);
 
         IEnumerable<Т> GetAll<Т>(int page, int itemsPerPage = 12);
 
