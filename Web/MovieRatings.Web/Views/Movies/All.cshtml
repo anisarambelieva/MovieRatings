@@ -1,0 +1,30 @@
+﻿@model MovieRatings.Web.ViewModels.Movies.MoviesListViewModel
+@{
+    this.ViewData["Title"] = "All Movies";
+}
+
+<h1>@this.ViewData["Title"]</h1>
+
+<hr />
+<div class="row">
+    @foreach (var movie in this.Model.Movies)
+    {
+        <div class="media col-md-4">
+            <img class="mr-3" src="@movie.ImageUrl" width="100">
+            <div class="media-body">
+                <h5 class="mt-0">@movie.Name</h5>
+                @movie.GenreName
+                </div>
+        </div>
+    }
+</div>
+<hr />
+<nav aria-label="...">
+    <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</nav>

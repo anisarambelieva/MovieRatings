@@ -1,9 +1,11 @@
 ﻿namespace MovieRatings.Web.Controllers
 {
+    using System.Threading.Tasks;
+
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using MovieRatings.Services.Data;
     using MovieRatings.Web.ViewModels.Movies;
-    using System.Threading.Tasks;
 
     public class MoviesController : Controller
     {
@@ -18,6 +20,7 @@
             this.moviesService = moviesService;
         }
 
+        [Authorize]
         public IActionResult Create()
         {
             var viewModel = new CreateMovieInputModel();
@@ -26,6 +29,7 @@
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Create(CreateMovieInputModel input)
         {
             if (!this.ModelState.IsValid)
@@ -38,6 +42,16 @@
 
             // TODO: Redirect to Movie page
             return this.Redirect("/");
+        }
+
+        public IActionResult All(int id)
+        {
+            var viewModel = new MoviesListViewModel
+            {
+                PageNumber = id,
+                Movies = this.moviesService.GetAll(id, 12),
+            };
+            return this.View(viewModel);
         }
     }
 }
