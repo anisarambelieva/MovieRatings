@@ -10,11 +10,11 @@
     @foreach (var movie in this.Model.Movies)
     {
         <div class="media col-md-4">
-            <img class="mr-3" src="@movie.ImageUrl" width="100">
+            <img src="@movie.ImageUrl" width="100" class="mr-3 img-responsive">
             <div class="media-body">
                 <h5 class="mt-0">@movie.Name</h5>
                 @movie.GenreName
-                </div>
+            </div>
         </div>
     }
 </div>

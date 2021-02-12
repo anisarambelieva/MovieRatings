@@ -21,11 +21,11 @@
         public void CreateMappings(IProfileExpression configuration)
         {
             configuration.CreateMap<Movie, MovieInListViewModel>()
-                .ForMember(x => x.ImageUrl, opt =>
-                opt.MapFrom(
-                    x => x.Images.FirstOrDefault().RemoteImageUrl != null ?
-                        x.Images.FirstOrDefault().RemoteImageUrl :
-                        "images/movies/" + x.Images.FirstOrDefault().Id + "." + x.Images.FirstOrDefault().Extension));
+               .ForMember(x => x.ImageUrl, opt =>
+                   opt.MapFrom(x =>
+                       x.Images.FirstOrDefault().RemoteImageUrl != null ?
+                       x.Images.FirstOrDefault().RemoteImageUrl :
+                       "/images/movies/" + x.Images.FirstOrDefault().Id + "." + x.Images.FirstOrDefault().Extension));
         }
     }
 }
