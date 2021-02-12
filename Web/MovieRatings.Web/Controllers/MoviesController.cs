@@ -72,5 +72,11 @@
             };
             return this.View(viewModel);
         }
+
+        public IActionResult ById(int id)
+        {
+            var movie = this.moviesService.GetById<SingleMovieViewModel>(id);
+            return this.View(movie);
+        }
     }
 }

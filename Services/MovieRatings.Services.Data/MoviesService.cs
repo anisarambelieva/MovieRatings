@@ -5,12 +5,11 @@
     using System.IO;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Hosting;
+
     using MovieRatings.Data.Common.Repositories;
     using MovieRatings.Data.Models;
     using MovieRatings.Services.Mapping;
     using MovieRatings.Web.ViewModels.Movies;
-
 
     public class MoviesService : IMoviesService
     {
@@ -67,6 +66,15 @@
                 .ToList();
 
             return movies;
+        }
+
+        public T GetById<T>(int id)
+        {
+            var movie = this.moviesRepository.AllAsNoTracking()
+                .Where(x => x.Id == id)
+                .To<T>().FirstOrDefault();
+
+            return movie;
         }
 
         public int GetCount()

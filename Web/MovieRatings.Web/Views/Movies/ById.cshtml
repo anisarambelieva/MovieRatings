@@ -1,0 +1,21 @@
+﻿@model MovieRatings.Web.ViewModels.Movies.SingleMovieViewModel
+
+<h2 class="item-title">@Model.Name</h2>
+
+<h4>@Model.GenreName</h4>
+<hr />
+
+<div class="making-elements-wrap">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="item-figure">
+                <img class="img-fluid" style="width: 250px" src="@Model.ImageUrl" alt="@Model.Name" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p class="item-description">
+                @Model.Description
+            </p>
+        </div>
+    </div>
+</div>
