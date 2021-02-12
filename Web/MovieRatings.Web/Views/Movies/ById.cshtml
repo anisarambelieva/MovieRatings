@@ -4,7 +4,22 @@
 
 <h4>@Model.GenreName</h4>
 <hr />
-
+<div class="row mb-4">
+    <div class="col-xl-9 col-12">
+        <ul class="entry-meta">
+            <li class="single-meta">
+                <ul class="item-rating">
+                    <li class="star-fill" data-vote="1"><i class="fas fa-star"></i></li>
+                    <li class="star-fill" data-vote="2"><i class="fas fa-star"></i></li>
+                    <li class="star-fill" data-vote="3"><i class="fas fa-star"></i></li>
+                    <li class="star-fill" data-vote="4"><i class="fas fa-star"></i></li>
+                    <li class="star-fill" data-vote="5"><i class="fas fa-star"></i></li>
+                    <li><span id="averageVoteValue">@Model.AverageVote.ToString("0.0")</span><span> / 5</span> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
 <div class="making-elements-wrap">
     <div class="row">
         <div class="col-md-6">
@@ -19,3 +34,24 @@
         </div>
     </div>
 </div>
+
+@section Scripts { 
+    <script>
+        $("li[data-vote]").each(function (el)) {
+            $(this).click(function ()) {
+                var value = $(this).attr("data-vote");
+                var movieId = @Model.Id;
+                var data = { movieId: movieId, value: value };
+                $.ajax({
+                    type: "POST",
+                    url: "api/Votes",
+                    data: JSON.stringify(data),
+                    success: function (data) {
+                        $('#averageVoteValue').html(data.averageVote);
+                    },
+                    contentType: 'application/json',
+                });
+            }
+        }
+    </script>
+}

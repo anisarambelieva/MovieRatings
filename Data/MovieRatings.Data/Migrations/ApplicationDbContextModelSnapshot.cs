@@ -368,6 +368,37 @@ namespace MovieRatings.Data.Migrations
                     b.ToTable("Settings");
                 });
 
+            modelBuilder.Entity("MovieRatings.Data.Models.Vote", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<byte>("Value")
+                        .HasColumnType("tinyint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Votes");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("MovieRatings.Data.Models.ApplicationRole", null)
@@ -441,6 +472,23 @@ namespace MovieRatings.Data.Migrations
                     b.Navigation("Genre");
                 });
 
+            modelBuilder.Entity("MovieRatings.Data.Models.Vote", b =>
+                {
+                    b.HasOne("MovieRatings.Data.Models.Movie", "Movie")
+                        .WithMany("Votes")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MovieRatings.Data.Models.ApplicationUser", "User")
+                        .WithMany("Votes")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("MovieRatings.Data.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Claims");
@@ -448,6 +496,8 @@ namespace MovieRatings.Data.Migrations
                     b.Navigation("Logins");
 
                     b.Navigation("Roles");
+
+                    b.Navigation("Votes");
                 });
 
             modelBuilder.Entity("MovieRatings.Data.Models.Genre", b =>
@@ -458,6 +508,8 @@ namespace MovieRatings.Data.Migrations
             modelBuilder.Entity("MovieRatings.Data.Models.Movie", b =>
                 {
                     b.Navigation("Images");
+
+                    b.Navigation("Votes");
                 });
 #pragma warning restore 612, 618
         }

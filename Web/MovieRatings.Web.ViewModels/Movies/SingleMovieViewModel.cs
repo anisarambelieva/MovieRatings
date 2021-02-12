@@ -8,6 +8,8 @@
 
     public class SingleMovieViewModel : IMapFrom<Movie>, IHaveCustomMappings
     {
+        public int Id { get; set; }
+
         public string Name { get; set; }
 
         public string GenreName { get; set; }
@@ -16,9 +18,13 @@
 
         public string Description { get; set; }
 
+        public double AverageVote { get; set; }
+
         public void CreateMappings(IProfileExpression configuration)
         {
             configuration.CreateMap<Movie, SingleMovieViewModel>()
+                .ForMember(x => x.AverageVote, opt =>
+                    opt.MapFrom(x => x.Votes.Count() == 0 ? 0 : x.Votes.Average(v => v.Value)))
                .ForMember(x => x.ImageUrl, opt =>
                     opt.MapFrom(x =>
                         x.Images.FirstOrDefault().RemoteImageUrl != null ?
