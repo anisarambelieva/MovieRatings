@@ -14,5 +14,7 @@
         int GetCount();
 
         T GetById<T>(int id);
+
+        Task UpdateAsync(int id, EditMovieInputModel input);
     }
 }

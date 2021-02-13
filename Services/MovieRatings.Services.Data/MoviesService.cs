@@ -81,5 +81,16 @@
         {
             return this.moviesRepository.All().Count();
         }
+
+        public async Task UpdateAsync(int id, EditMovieInputModel input)
+        {
+            var movie = this.moviesRepository.All()
+                .FirstOrDefault(x => x.Id == id);
+            movie.Name = input.Name;
+            movie.Description = input.Description;
+            movie.GenreId = input.GenreId;
+
+            await this.moviesRepository.SaveChangesAsync();
+        }
     }
 }

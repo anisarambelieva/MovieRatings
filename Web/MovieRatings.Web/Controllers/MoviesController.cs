@@ -6,6 +6,7 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.Mvc;
+    using MovieRatings.Common;
     using MovieRatings.Services.Data;
     using MovieRatings.Web.ViewModels.Movies;
 
@@ -23,6 +24,30 @@
             this.genresService = genresService;
             this.moviesService = moviesService;
             this.environment = environment;
+        }
+
+        [Authorize(Roles = GlobalConstants.AdministratorRoleName)]
+        public IActionResult Edit(int id)
+        {
+            var inputModel = this.moviesService.GetById<EditMovieInputModel>(id);
+
+            inputModel.GenreItems = this.genresService.GetAllAsKeyValuePairs();
+            return this.View(inputModel);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = GlobalConstants.AdministratorRoleName)]
+        public async Task<IActionResult> Edit(int id, EditMovieInputModel input)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                input.GenreItems = this.genresService.GetAllAsKeyValuePairs();
+                return this.View(input);
+            }
+
+            await this.moviesService.UpdateAsync(id, input);
+
+            return this.RedirectToAction("ById", new { id });
         }
 
         [Authorize]

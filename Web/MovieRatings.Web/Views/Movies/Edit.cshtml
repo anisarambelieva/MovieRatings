@@ -1,0 +1,28 @@
+﻿@model MovieRatings.Web.ViewModels.Movies.EditMovieInputModel
+@{ 
+    ViewData["Title"] = "Edit movie";
+    var genreItems = this.Model.GenreItems.Select(x => new SelectListItem(x.Value, x.Key));
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="GenreId"></label>
+        <select asp-for="GenreId" asp-items="genreItems"></select>
+        <span asp-validation-for="GenreId" class="text-danger"></span>
+    </div>
+    <hr />
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" class="btn btn-success" value="Save changes" />
+</form>

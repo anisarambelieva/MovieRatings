@@ -3,9 +3,8 @@ namespace MovieRatings.Data.Models
 {
     using System;
 
-    using MovieRatings.Data.Common.Models;
-
     using Microsoft.AspNetCore.Identity;
+    using MovieRatings.Data.Common.Models;
 
     public class ApplicationRole : IdentityRole, IAuditInfo, IDeletableEntity
     {

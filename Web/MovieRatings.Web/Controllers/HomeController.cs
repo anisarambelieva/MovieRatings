@@ -1,9 +1,8 @@
 ﻿namespace MovieRatings.Web.Controllers
 {
     using System.Diagnostics;
-    using System.Linq;
+
     using Microsoft.AspNetCore.Mvc;
-    using MovieRatings.Data;
     using MovieRatings.Services.Data;
     using MovieRatings.Web.ViewModels;
     using MovieRatings.Web.ViewModels.Home;

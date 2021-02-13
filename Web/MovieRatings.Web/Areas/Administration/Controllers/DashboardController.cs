@@ -1,9 +1,8 @@
 ﻿namespace MovieRatings.Web.Areas.Administration.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
     using MovieRatings.Services.Data;
     using MovieRatings.Web.ViewModels.Administration.Dashboard;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class DashboardController : AdministrationController
     {
