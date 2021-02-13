@@ -6,27 +6,16 @@
 <h4>@Model.GenreName</h4>
 <hr />
 <div class="row mb-4">
-    <div class="col-xl-9 col-12">
-        <ul class="entry-meta">
-            <li class="single-meta">
-                <ul class="item-rating">
-                    <li class="star-fill" data-vote="1"><i class="fas fa-star"></i></li>
-                    <li class="star-fill" data-vote="2"><i class="fas fa-star"></i></li>
-                    <li class="star-fill" data-vote="3"><i class="fas fa-star"></i></li>
-                    <li class="star-fill" data-vote="4"><i class="fas fa-star"></i></li>
-                    <li class="star-fill" data-vote="5"><i class="fas fa-star"></i></li>
-                    <li><span id="averageVoteValue">@Model.AverageVote.ToString("0.0")</span><span> / 5</span> </li>
-                </ul>
-            </li>
-            @if (this.User.IsInRole(GlobalConstants.AdministratorRoleName))
-            {
-                <li class="single-meta">
-                    <a asp-controller="Movies" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-secondary">Edit</a>
-                </li>
-            }
-        </ul>
+    <div class="col-xl-9 col-12 item-rating">
+        <a class="star-fill" data-vote="1"><i class="fas fa-star"></i></a>
+        <a class="star-fill" data-vote="2"><i class="fas fa-star"></i></a>
+        <a class="star-fill" data-vote="3"><i class="fas fa-star"></i></a>
+        <a class="star-fill" data-vote="4"><i class="fas fa-star"></i></a>
+        <a class="star-fill" data-vote="5"><i class="fas fa-star"></i></a>
+        <a><span id="averageVoteValue">@Model.AverageVote.ToString()</span><span> / 5</span> </a>
     </div>
 </div>
+
 <div class="making-elements-wrap">
     <div class="row">
         <div class="col-md-6">
@@ -41,24 +30,34 @@
         </div>
     </div>
 </div>
+<hr />
+<div>
+    @if (this.User.IsInRole(GlobalConstants.AdministratorRoleName))
+    {
+        <a class="single-meta">
+            <a asp-controller="Movies" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-secondary">Edit</a>
+        </a>
+    }
+</div>
 
-@section Scripts { 
+<form method="post"></form>
+@section Scripts {
     <script>
-        $("li[data-vote]").each(function (el)) {
-            $(this).click(function ()) {
+        $("a[data-vote]").each(function (el) {
+            $(this).click(function () {
                 var value = $(this).attr("data-vote");
                 var movieId = @Model.Id;
                 var data = { movieId: movieId, value: value };
                 $.ajax({
                     type: "POST",
-                    url: "api/Votes",
+                    url: "/api/Votes",
                     data: JSON.stringify(data),
                     success: function (data) {
-                        $('#averageVoteValue').html(data.averageVote);
+                        $('#averageVoteValue').html(data.averageVote.toFixed(1));
                     },
                     contentType: 'application/json',
                 });
-            }
-        }
+            })
+        });
     </script>
 }
